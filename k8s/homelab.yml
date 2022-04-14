@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: homelab-operator
+  name: homelab-operator
+  labels:
+    app: homelab-operator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: homelab-operator
+  template:
+    metadata:
+      labels:
+        app: homelab-operator
+    spec:
+      serviceAccountName: 
+      containers:
+        - name: homelab-operator
+          image: homelab-operator:v1.0.0
