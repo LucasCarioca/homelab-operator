@@ -6,5 +6,5 @@ metadata:
 spec:
   containerName: ghcr.io/lucascarioca/wedding-registration-admin
   containerTag: latest
-  replicas: 2
-  port: 31111
+  replicas: 4
+  port: 31112
