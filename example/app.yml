@@ -1,0 +1,10 @@
+apiVersion: ldkube.com/v1
+kind: Application
+metadata:
+  name: wedding-registration-admin
+  namespace: wedding
+spec:
+  containerName: ghcr.io/lucascarioca/wedding-registration-admin
+  containerTag: latest
+  replicas: 2
+  port: 31111
